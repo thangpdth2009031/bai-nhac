@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/my-songs.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>My Songs</title>
+    <script>
+        var token = localStorage.getItem('dang-nhap-thanh-cong');
+        if(token == null) {
+            alert('Chưa đăng nhập hệ thống.');
+            window.location = 'login.md.html';
+        }
+    </script>
+</head>
+<body>
+<div class="anh-dau-tran">
+    <div class="anh"><img src="image/ca-si5.jpg"></div>
+    <div class="anh"><img src="image/ca-si6.jpg"></div>
+    <div class="anh"><img src="image/ca-si7.jpg"></div>
+    <div class="anh"><img src="image/ca-si3.jpg"></div>
+</div>
+<div class="text-center border-radius10">
+    <h1 id="bai-hat">Bài hát của tôi</h1>
+    <div id="menu">
+        <a href="member-information.md.html">Profile</a>
+        <a href="get-latest-song.md.html">Latest Songs</a>
+        <a href="create.html">Add Song</a>
+    </div>
+    <div id="songs"></div>
+</div>
+<script src="js/my-songs.js"></script>
+</body>
+</html>

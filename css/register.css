@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+                 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+* {
+    box-sizing: border-box;
+}
+.input-block,
+.input-inline-block {
+    height: 40px;
+    padding: 5px 12px;
+}
+input[name=password], input[name=phone] {
+    margin-top: 10px;
+}
+.input-block {
+    width: 402px;
+    margin-top: 10px;
+    display: block;
+}
+.input-inline-block {
+    display: inline-block;
+    width: 194px;
+}
+.text-center {
+    margin: 15px auto 100px;
+    width: 433px;
+    padding: 10px 15px;
+    box-shadow: 2px 15px 15px 6px lightgrey;
+    border-radius: 10px;
+}
+#sign-up {
+    margin: 0 0 3px 0;
+    padding: 0;
+}
+.duoi-logo {
+    margin-bottom: 15px;
+}
+.logo {
+    text-align: center;
+    height: 70px
+}
+#h5-duoi-logo {
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+.border-radius {
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.last-name-left {
+    margin-left: 8px;
+}
+.ngay-sinh {
+    width: 125px;
+    margin-right: 8px;
+}
+.mg-right {
+    margin-right: 0;
+}
+input[name=ngay] {
+    margin-right: 0;
+}
+label[class=input-block] {
+    margin-top: 13px;
+    padding: 0;
+    font-size: 13px;
+    height: 18px
+}
+.gender {
+    margin-top: 5px;
+    height: 20px;
+    padding: 0;
+    font-size: 13px;
+}
+input[name=gender] {
+    width: 15px;
+    margin: 7px;
+    height: 13px;
+}
+.lable-gt {
+    width: 65px;
+    margin: 0;
+    padding: 0;
+    height: 22px;
+}
+.sb-sign-up {
+    margin: 13px;
+}
+button[name=btn-register] {
+    font-size: larger;
+    width: 195px;
+    margin: 25px auto 20px;
+    border-radius: 5px;
+    height: 36px;
+    color: white;
+    border: none;
+    background: #00a400;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none; !important;
+}

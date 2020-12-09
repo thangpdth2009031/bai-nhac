@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Song</title>
+    <link rel="stylesheet" href="css/create.css">
+    <script>
+        var token = localStorage.getItem('dang-nhap-thanh-cong');
+        //kiểm tra nếu khác null.
+        if (token == null) {
+            alert('chưa đăng nhập hệ thống.');
+            //đưa về trang đăng nhập.
+            window.location = 'login.md.html';
+        }
+    </script>
+</head>
+<body>
+<div class="text-center">
+    <h2>Create Song:</h2>
+    <div class="form">
+        <form action="" name="add-song-form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="singer" placeholder="Singer">
+            <input type="text" name="author" placeholder="Author">
+            <input type="text" name="thumbnail" placeholder="Thumbnail">
+            <input type="text" name="link" placeholder="Link">
+            <input type="button" value="Add Song" name="btn-submit">
+        </form>
+    </div>
+</div>
+<script src="js/create.js"></script>
+</body>
+</html>

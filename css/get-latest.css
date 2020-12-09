@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/anh-nen.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+.anh-dau-tran {
+    margin: 8px 0 10px 60px;
+}
+.anh-dau-tran::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.center {
+    margin: 0 auto;
+}
+.anh img {
+    height: 290px;
+    float: left;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+.text-center {
+    width: 1218px;
+    margin: 0 auto 0;
+    background: linear-gradient(45deg, black, transparent);
+}
+.border-radius10 {
+    border-radius: 10px;
+}
+.bod-rdu4 {
+    border-radius: 4px;
+}
+#bai-hat {
+    margin: 0;
+    padding: 15px 0 17px 20px;
+}
+.boc-tc {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto 10px;
+    background-color:rgba(0,0,0,0.1);
+
+}
+.boc-tc:hover {
+    background-color:rgba(0,0,0,0.4);
+}
+#thumbnail {
+    vertical-align: top;
+    display: inline-block;
+}
+#thumbnail img {
+    width: 63px;
+    height: 62px;
+    margin: 8px 0 8px 10px;
+}
+.so {
+    height: 22px;
+}
+.number {
+    width: 50px;
+    display: inline-block;
+    color: rgba(255, 0, 0, 0);
+    -webkit-text-stroke: 1px #FF0000;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 22px;
+    margin-left: 13px;
+    vertical-align: top;
+}
+.audio {
+    width: 275px;
+    border: 15px;
+    height: 35px;
+    margin: 22px 0 22px 10px;
+    display: inline-block;
+    text-align: right;
+}
+.song-name-author, .song-name, .author {
+    display: inline-block;
+}
+.song-name-author {
+    vertical-align: top;
+    width: 717px;
+    padding-right: 70px;
+    margin: 18px 0 0 15px;
+}
+a {
+    text-decoration: none;
+    padding: 14px 14px 11px 14px;
+    float: left;
+    font-size: 20px;
+    color: dodgerblue;
+}
+a:hover {
+    color: #FF0099;
+    border-bottom: 5px solid #FF00CC;
+    background: rgba(0,0,0, 0.3);
+}
+a:active {
+    border-bottom: 5px solid #FF00CC;
+}
+
+.author {
+    padding-left: 15px;
+}
+.author:hover {
+    color: #FF0099;
+}
+.song-name {
+    width: 340px;
+    padding-right: 40px;
+    border-right: 1px solid #53316c;
+}
+.singer {
+    font-size: 13px;
+    padding: 5px 0;
+    color: lightgrey;
+}
+.singer:hover {
+    color: #FF0099;
+}
+
+a {
+    text-decoration: none;
+    padding: 14px 14px 11px 14px;
+    font-size: 20px;
+    color: dodgerblue;
+}
+a:hover {
+    color: #FF0099;
+    border-bottom: 5px solid #FF00CC;
+    background: rgba(0,0,0, 0.3);
+}
+a:active {
+    border-bottom: 5px solid #FF00CC;
+}
+#menu {
+    height: 57px;
+    margin: 12px 0 0 25px;
+}

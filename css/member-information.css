@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    color: white;
+    background-image: url("../image/anh-nen.jpg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+*{
+    box-sizing: border-box;
+}
+.text-center {
+    border-radius: 15px;
+    margin: 25px auto;
+    width: 750px;
+    height: 1205px;
+    background: linear-gradient(45deg, #CC0066, transparent);
+}
+.dong-1 {
+    border-radius: 10px;
+    height: 308px;
+    background-color:rgba(0,0,0,0.1);
+}
+.anh-bia {
+    height: 234px;
+    border-radius: 10px;
+}
+hr {
+    margin: 0 auto;
+    width: 699px;
+}
+#anh-dai-dien {
+    float: left;
+    width: 415px;
+}
+#anh-dai-dien img {
+    height: 150px;
+    width: 150px;
+    margin: 20px 130px;
+    border-radius: 50%;
+}
+#logo-thuong-hieu {
+    float: right;
+    margin: 26px 10px;
+    width: 313px;
+    height: 177px;
+    overflow: hidden;
+}
+#logo-thuong-hieu img {
+    border-radius: 10px;
+}
+h2 {
+    margin: 0;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    padding: 14px 14px 11px 14px;
+    float: left;
+    font-size: 20px;
+    color: dodgerblue;
+}
+a:hover {
+    color: #FF0099;
+    border-bottom: 5px solid #FF00CC;
+    background: rgba(0,0,0, 0.3);
+}
+a:active {
+    border-bottom: 5px solid #FF00CC;
+}
+#menu {
+    height: 57px;
+    margin: 12px 0 0 25px;
+}
+.dong-2 {
+    border-radius: 10px;
+    width: 703px;
+    margin: 20px auto;
+    background-color:rgba(0,0,0,0.2);
+}
+.key, .nd {
+    float: left;
+}
+.key {
+    width: 105px;
+    margin: 20px 0 0 15px;
+}
+.nd:last-child {
+    margin-bottom: 15px;
+}
+.nd {
+    width: 567px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.1);
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dong-2::after {
+    content: " ";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script>
+        var token = localStorage.getItem('dang-nhap-thanh-cong');
+
+        if (token) {
+            window.location = 'member-information.md.html';
+        }
+    </script>
+</head>
+<body>
+<div class="text-center">
+    <div class="logo">
+        <img src="image/logo.PNG">
+    </div>
+    <div class="duoi-logo">
+        <h1 id="sign-up">Sign up</h1>
+        <h5 id="h5-duoi-logo">Đăng ký thành viên!</h5>
+    </div>
+    <div class="form">
+        <form action="#" name="register">
+            <input class="input-inline-block border-radius" type="text" name="firstName" placeholder="First Name">
+            <input class="input-inline-block border-radius last-name-left" type="text" name="lastName"
+                   placeholder="Last Name">
+            <input class="input-block border-radius" type="text" name="email" placeholder="Email">
+            <input class="input-inline-block border-radius" type="password" name="password" placeholder="Password">
+            <input class="input-inline-block border-radius last-name-left" type="text" name="phone" placeholder="Phone">
+            <input class="input-block border-radius" type="text" name="address" placeholder="Address">
+            <input class="input-block border-radius" type="text" name="avatar" placeholder="Avatar">
+            <label class="input-block">Birthday:</label>
+            <input class="input-inline-block border-radius ngay-sinh" type="text" name="nam" placeholder="Năm">
+            <input class="input-inline-block border-radius ngay-sinh" type="text" name="thang" placeholder="Tháng">
+            <input class="input-inline-block border-radius ngay-sinh" type="text" name="ngay" placeholder="Ngày">
+            <label class="input-block gender">Gender:</label>
+            <div class="input-inline-block ngay-sinh border-radius">
+                <label class="input-inline-block lable-gt">Nam</label>
+                <input class="input-inline-block border-radius" name="gender" type="radio" value="1"/>
+            </div>
+            <div class="input-inline-block ngay-sinh border-radius"><label
+                    class="input-inline-block lable-gt">Nữ</label>
+                <input class="input-inline-block border-radius" name="gender" type="radio" value="2"/>
+            </div>
+            <div class="input-inline-block ngay-sinh border-radius mg-right"><label
+                    class="input-inline-block lable-gt">Khác</label>
+                <input class="input-inline-block border-radius" name="gender" type="radio" value="3"/>
+            </div>
+            <button class="input-block border-radius" name="btn-register" type="button">Sign Up</button>
+        </form>
+    </div>
+</div>
+<script src="./js/register.js"></script>
+</body>
+</html>

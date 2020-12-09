@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+        var token = localStorage.getItem('dang-nhap-thanh-cong');
+        //kiểm tra nếu khác null.
+        if (token) {
+            window.location = 'member-information.md.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="text-center">
+        <div class="form">
+            <form action="" name="login-form">
+                <label>Email </label>
+                <input type="email" name="email" placeholder="Email...">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password...">
+                <input type="button" value="Log In" name="btn-submit">
+                <p>Don't have an account yet? <a href="register-api.md.html">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+</html>

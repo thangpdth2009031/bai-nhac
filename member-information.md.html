@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member information</title>
+    <link rel="stylesheet" href="css/member-information.css">
+    <script>
+        var token = localStorage.getItem('dang-nhap-thanh-cong');
+
+        if (token == null) {
+            alert('chưa đăng nhập hệ thống.');
+            //đưa về trang đăng nhập.
+            window.location = 'login.md.html';
+        }
+    </script>
+</head>
+<body>
+<div class="text-center">
+    <div class="dong-1">
+        <div class="anh-bia">
+            <div id="anh-dai-dien">
+                <img src="image/anh-dai-dien.PNG">
+                <h2 class="full-name" id="full-name"></h2>
+            </div>
+            <div id="logo-thuong-hieu"><img src="image/logo-pdthang.PNG"></div>
+        </div>
+        <hr>
+        <div id="menu">
+            <a href="#">Profile</a>
+            <a href="my-songs.html">My Songs</a>
+            <a href="get-latest-song.md.html">Latest Songs</a>
+            <a href="create.html">Add Song</a>
+        </div>
+        <hr>
+    </div>
+    <div class="dong-2" id="member-info">
+        <div class="key">Id:</div>
+        <div class="nd" id="id"></div>
+        <div class="key">First Name:</div>
+        <div class="nd" id="first-name"></div>
+        <div class="key">Last Name:</div>
+        <div class="nd" id="last-name"></div>
+        <div class="key" id="introduction">Introduction:</div>
+        <div class="nd" id="intro"></div>
+        <div class="key">Avatar:</div>
+        <div class="nd" id="avatar"></div>
+        <div class="key">Phone:</div>
+        <div class="nd" id="phone"></div>
+        <div class="key">Address:</div>
+        <div class="nd" id="address"></div>
+        <div class="key">Gender:</div>
+        <div class="nd" id="gender"></div>
+        <div class="key">Birthday:</div>
+        <div class="nd" id="birthday"></div>
+        <div class="key">Email:</div>
+        <div class="nd" id="email"></div>
+        <div class="key">Password:</div>
+        <div class="nd" id="password"></div>
+        <div class="key">Salt:</div>
+        <div class="nd" id="salt"></div>
+        <div class="key">CreatedAt:</div>
+        <div class="nd" id="created-At"></div>
+        <div class="key">UpdatedAt:</div>
+        <div class="nd" id="updated-At"></div>
+        <div class="key">Status:</div>
+        <div class="nd" id="status"></div>
+    </div>
+</div>
+<script src="./js/member.js"></script>
+</body>
+</html>
