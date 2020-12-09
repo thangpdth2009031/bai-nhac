@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             var fullName = responseJsonObject.lastName + ' ' + responseJsonObject.firstName;
             document.getElementById("full-name").innerHTML = fullName;
-            //document.getElementById("logo-thuong-hieu").innerHTML = '<img src="' + responseJsonObject.avatar + '">';
-
+            document.getElementById("logo-thuong-hieu").innerHTML = '<img src="' + responseJsonObject.avatar + '">';
             document.getElementById("id").innerHTML = responseJsonObject.id;
             document.getElementById("first-name").innerHTML = responseJsonObject.firstName;
             document.getElementById("last-name").innerHTML = responseJsonObject.lastName;
