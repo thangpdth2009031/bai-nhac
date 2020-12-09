@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
             xhr.open('POST', API_DOMAIN + ADD_SONG_API_URL, true);
-            xhr.setRequestHeader('Content-type', 'application/json');
+            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
             xhr.setRequestHeader('Authorization', token);
             xhr.send(registerDataJson);
         }
