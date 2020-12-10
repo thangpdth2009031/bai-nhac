@@ -1,9 +1,7 @@
 var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
 var REGISTER_API_URL = '/_api/v2/members';
-
 document.addEventListener('DOMContentLoaded', function () {
     var btnRegister = document.forms['register']['btn-register'];
-
     if (btnRegister) {
         btnRegister.onclick = function () {
             var txtFirstName = document.forms['register']['firstName'];
@@ -18,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
             var txtDay = document.forms['register']['ngay'];
             var rdoGender = document.forms['register']['gender'];
             var birthDay = txtYear.value + "-" + txtMonth.value + "-" + txtDay.value;
-
             var registerDataObj = {
                 'firstName': txtFirstName.value,
                 'lastName': txtLastName.value,
@@ -30,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 'email': txtEmail.value,
                 'birthday': birthDay,
             }
-
             var registerDataJson = JSON.stringify(registerDataObj);
-
             var xhr = new XMLHttpRequest();
+            xhr.open('POST', API_DOMAIN + REGISTER_API_URL, false);
+            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 201) {
                     alert("DONE! Dang ky thanh cong!");
@@ -42,9 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert("Dang ky khong thanh cong!");
                 }
             }
-
-            xhr.open('POST', API_DOMAIN + REGISTER_API_URL, false);
-            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
             xhr.send(registerDataJson);
         }
     }

@@ -1,9 +1,7 @@
 var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
 var LATEST_API_URL = '/_api/v2/songs';
-
 document.addEventListener('DOMContentLoaded', function () {
     var xhr = new XMLHttpRequest();
-
     xhr.open('GET', API_DOMAIN + LATEST_API_URL, false);
     xhr.setRequestHeader('Authorization', token);
     xhr.onreadystatechange = function () {
@@ -12,11 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
             var html = '';
             var index;
             var limited = 10;
-
             if (responseJsonObject.length < limited) {
                 limited = responseJsonObject.length;
             }
-
             if (responseJsonObject.length > 0) {
                 for (index = 0; index < limited; index++) {
                     html += '<div class="boc-tc bod-rdu4" id="list-song">';
