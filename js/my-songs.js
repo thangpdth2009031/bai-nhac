@@ -1,6 +1,5 @@
-var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
+var API_DOMAIN = 'https://2-dot-backup-server-002.appspot.com';
 var MY_SONGS_API_URL = '/_api/v2/songs/get-mine';
-
 document.addEventListener('DOMContentLoaded', function () {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', API_DOMAIN + MY_SONGS_API_URL, false);

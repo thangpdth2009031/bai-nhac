@@ -1,4 +1,4 @@
-var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
+var API_DOMAIN = 'https://2-dot-backup-server-002.appspot.com';
 var REGISTER_API_URL = '/_api/v2/members';
 document.addEventListener('DOMContentLoaded', function () {
     var btnRegister = document.forms['register']['btn-register'];
@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
             xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 201) {
-                    alert("DONE! Dang ky thanh cong!");
+                    alert("Đăng kí thành công!");
                     window.location = "login.md.html";
                 } else {
-                    alert("Dang ky khong thanh cong!");
+                    alert("Đăng kí không thành công!");
                 }
             }
             xhr.send(registerDataJson);

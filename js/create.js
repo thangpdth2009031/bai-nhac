@@ -1,4 +1,4 @@
-var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
+var API_DOMAIN = 'https://2-dot-backup-server-002.appspot.com';
 var ADD_SONG_API_URL = '/_api/v2/songs';
 document.addEventListener('DOMContentLoaded', function () {
     var btnSubmit = document.forms['add-song-form']['btn-submit'];
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 201) {
                     //var responseData = JSON.parse(this.responseText);
-                    alert("DONE! Thêm bài hát thành công!");
+                    alert("Thêm bài hát thành công!");
                     window.location = "my-songs.html";
                 } else {
                     alert("Thêm bài hát không thành công!");
