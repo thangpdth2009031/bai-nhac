@@ -1,5 +1,5 @@
 var API_DOMAIN = 'https://2-dot-backup-server-001.appspot.com';
-var MEMBER_INFO_API_URL = '/_api/v2/members/information';
+var MEMBER_INFO_API_URL = '/_api/v1/members/information';
 
 document.addEventListener('DOMContentLoaded', function () {
     var xhr = new XMLHttpRequest();
