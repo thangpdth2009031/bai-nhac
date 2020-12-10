@@ -1,4 +1,4 @@
-var API_DOMAIN = 'https://2-dot-backup-server-002.appspot.com';
+var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
 var REGISTER_API_URL = '/_api/v2/members/authentication';
 //lấy ra biến token trong local storagel.
 var token = localStorage.getItem('dang-nhap-thanh-cong');
