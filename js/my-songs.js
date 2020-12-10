@@ -3,9 +3,6 @@ var MY_SONGS_API_URL = '/_api/v2/songs/get-mine';
 
 document.addEventListener('DOMContentLoaded', function () {
     var xhr = new XMLHttpRequest();
-
-    xhr.open('GET', API_DOMAIN + MY_SONGS_API_URL, false);
-    xhr.setRequestHeader('Authorization', token);
     xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var responseJsonObject = JSON.parse(this.responseText);
@@ -37,5 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Không lấy được thông tin người dùng!')
         }
     }
+    xhr.open('GET', API_DOMAIN + MY_SONGS_API_URL, false);
+    xhr.setRequestHeader('Authorization', token);
     xhr.send();
 })
