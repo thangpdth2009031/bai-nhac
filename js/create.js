@@ -29,9 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert("Thêm bài hát không thành công!");
                 }
             }
-            xhr.open('POST', API_DOMAIN + ADD_SONG_API_URL, false);
-            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
-            xhr.setRequestHeader('Authorization', token);
             xhr.send(registerDataJson);
         }
     }
