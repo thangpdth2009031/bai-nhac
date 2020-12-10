@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById("songs").innerHTML = html;
             }
         } else {
-            alert('Không lấy được thông tin người dùng!')
+            alert('Không lấy được bài hát!')
         }
     }
     xhr.send();
