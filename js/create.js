@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert("Thêm bài hát không thành công!");
                 }
             }
-            xhr.send();
+            xhr.send(registerDataJson);
         }
     }
 })
