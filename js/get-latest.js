@@ -1,5 +1,5 @@
-var API_DOMAIN = 'https://2-dot-backup-server-001.appspot.com';
-var LATEST_API_URL = '/_api/v1/songs';
+var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
+var LATEST_API_URL = '/_api/v2/songs';
 
 document.addEventListener('DOMContentLoaded', function () {
     var xhr = new XMLHttpRequest();

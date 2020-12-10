@@ -1,5 +1,5 @@
-var API_DOMAIN = 'https://2-dot-backup-server-001.appspot.com';
-var REGISTER_API_URL = '/_api/v1/members/authentication';
+var API_DOMAIN = 'https://2-dot-backup-server-003.appspot.com';
+var REGISTER_API_URL = '/_api/v2/members/authentication';
 
 document.addEventListener('DOMContentLoaded', function () {
     var btnSubmit = document.forms['login-form']['btn-submit'];
