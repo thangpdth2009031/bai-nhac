@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 201) {
             var responseJsonObject = JSON.parse(this.responseText);
+            var fullName = responseJsonObject.lastName + ' ' + responseJsonObject.firstName;
+            document.getElementById("full-name").innerHTML = fullName;
             document.getElementById("anh-dai-dien").innerHTML = '<img src="' + responseJsonObject.avatar + '">';
-            document.getElementById("full-name").innerHTML = responseJsonObject.lastName + ' ' + responseJsonObject.firstName;
             document.getElementById("id").innerHTML = responseJsonObject.id;
             document.getElementById("first-name").innerHTML = responseJsonObject.firstName;
             document.getElementById("last-name").innerHTML = responseJsonObject.lastName;

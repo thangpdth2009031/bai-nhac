@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             var registerDataJson = JSON.stringify(registerDataObj);
             var xhr = new XMLHttpRequest();
-
+            xhr.open('POST', API_DOMAIN + ADD_SONG_API_URL, false);
+            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
+            xhr.setRequestHeader('Authorization', token);
 
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 201) {
